@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :collections
   has_many :items, through: :collections
   has_many :categories, through: :collections
+  has_many :images, through: :items
 end
 
 # has_secure_password

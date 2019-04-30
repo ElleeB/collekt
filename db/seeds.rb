@@ -14,10 +14,39 @@ items = Item.create([
   {name: "jeep", collection_id: 1, description: "grey and orange. model year 2010."},
 
   {name: "eames", collection_id: 2, description: "mint condition black leather."},
-  {name: "rocking", collection_id: 2, description: "maple rocker authentic 1866."},
+  {name: "thonet", collection_id: 2, description: "michael thonet authentic 1866 folding chair."},
   {name: "morris", collection_id: 2, description: "brown leather on oak. slight wear on leather. authentic 1879."},
 
-  {name: "fender strat", collection_id: 3, description: "gold and black body slight wear. acquired in 1988. authentic 1959."},
+  {name: "fender strat", collection_id: 3, description: "gold and black body slight wear. acquired in 1988. authentic 1977."},
   {name: "fender tele", collection_id: 3, description: "telecaster in mint condition."},
   {name: "les paul", collection_id: 3, description: "limited edition blue body."}
+])
+
+images = Image.create([
+  {source: "./assets/images/camaro1.jpg", item_id: 1},
+  {source: "./assets/images/camaro2.jpg", item_id: 1},
+  {source: "./assets/images/camaro3.jpg", item_id: 1},
+  {source: "./assets/images/porsche1.jpg", item_id: 2},
+  {source: "./assets/images/porsche2.jpg", item_id: 2},
+  {source: "./assets/images/porsche3.jpg", item_id: 2},
+  {source: "./assets/images/jeep1.jpg", item_id: 3},
+  {source: "./assets/images/jeep2.jpg", item_id: 3},
+  {source: "./assets/images/jeep3.jpg", item_id: 3},
+
+  {source: "./assets/images/eames1.jpg", item_id: 4},
+  {source: "./assets/images/eames2.jpg", item_id: 4},
+  {source: "./assets/images/thonet1.jpg", item_id: 5},
+  {source: "./assets/images/thonet2.jpg", item_id: 5},
+  {source: "./assets/images/morris1.jpg", item_id: 6},
+  {source: "./assets/images/morris2.jpg", item_id: 6},
+  {source: "./assets/images/morris3.jpg", item_id: 6},
+
+  {source: "./assets/images/strat1.jpg", item_id: 7},
+  {source: "./assets/images/strat2.jpg", item_id: 7},
+  {source: "./assets/images/strat3.jpg", item_id: 7},
+  {source: "./assets/images/tele1.jpg", item_id: 8},
+  {source: "./assets/images/tele2.jpg", item_id: 8},
+  {source: "./assets/images/les1.jpg", item_id: 9},
+  {source: "./assets/images/les2.jpg", item_id: 9},
+  {source: "./assets/images/les3.jpg", item_id: 9}
 ])
