@@ -4,4 +4,5 @@ class UserSerializer < ActiveModel::Serializer
   has_many :collections
   has_many :items, through: :collections
   has_many :categories, through: :collections
+  has_many :images, through: :collections
 end

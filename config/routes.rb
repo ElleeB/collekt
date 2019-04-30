@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :collections
   resources :items
   resources :sessions, only: [:new, :create]
+  resources :images
 
   resources :users do
     resources :collections

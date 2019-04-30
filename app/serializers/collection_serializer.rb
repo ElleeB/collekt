@@ -4,4 +4,5 @@ class CollectionSerializer < ActiveModel::Serializer
   has_one :user, serialize: UserSerializer
   has_one :category, serialize: CategorySerializer
   has_many :items
+  has_many :images, through: :items
 end
