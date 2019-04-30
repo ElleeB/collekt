@@ -1,3 +1,10 @@
+User.destroy_all
+Category.destroy_all
+Collection.destroy_all
+Item.destroy_all
+Image.destroy_all
+
+
 User.create(username: "avery", email: "avery@gmail.com", bio: "do you know the muffin man, the muffin man, the muffin man? Do you know, the muffin man, who lives on Drury lane?", password: "muffin", password_confirmation: "muffin")
 
 categories = Category.create([{name: 'Toys'}, {name: 'Furniture'}, {name: 'Instruments'}])
