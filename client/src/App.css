@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.navbar {
+  background-color: grey;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
 .App-header {
   background-color: #282c34;
   height: 100px;
@@ -11,6 +20,5 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  vertical-align: top;
   color: white;
 }
