@@ -11,9 +11,9 @@ import {
 import HomeContainer from './containers/HomeContainer'
 import AccountContainer from './containers/AccountContainer'
 import UserCollectionsContainer from './containers/UserCollectionsContainer'
-import getCollections from './reducers/getCollections'
+import rootReducer from './reducers/rootReducer'
 
-const store = createStore(getCollections, applyMiddleware(thunk))
+const store = createStore(rootReducer, applyMiddleware(thunk))
 
 const App = () => {
 
