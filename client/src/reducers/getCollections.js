@@ -1,4 +1,4 @@
-export default function collections(state = {
+export default function getCollections(state = {
   collections: [] },
   action) {
 
