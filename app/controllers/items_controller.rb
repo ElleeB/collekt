@@ -1,4 +1,4 @@
-module Api
+
   class ItemsController < ApplicationController
     def index
     end
@@ -9,4 +9,3 @@ module Api
       params.require(:item).permit(:name, :collection_id)
     end
   end
-end

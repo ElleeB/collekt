@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import {
   Route,
   NavLink,
-  HashRouter
+  BrowserRouter
 } from 'react-router-dom'
 import HomeContainer from './containers/HomeContainer'
 import AccountContainer from './containers/AccountContainer'
@@ -11,7 +11,7 @@ import UserCollectionsContainer from './containers/UserCollectionsContainer'
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <h1>Collekt!</h1>
           <ul className="header">
@@ -25,7 +25,7 @@ class App extends Component {
             <Route path='/user_collections' component={UserCollectionsContainer} />
           </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
