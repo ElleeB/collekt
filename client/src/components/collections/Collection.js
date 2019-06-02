@@ -7,8 +7,10 @@ const Collection = props => {
   return (
     <div>
       <li>
-        {collection.text}
+        <h3>{collection.title}</h3>
       </li>
     </div>
   )
 }
+
+export default Collection

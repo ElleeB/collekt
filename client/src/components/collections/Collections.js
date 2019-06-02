@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import collection from '../components/collections/Collection'
+import Collection from './Collection'
 
 class Collections extends Component {
   render() {

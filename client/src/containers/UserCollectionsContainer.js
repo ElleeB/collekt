@@ -10,18 +10,18 @@ class UserCollectionsContainer extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div>
         <h2>USER COLLECTIONS</h2>
-        <Collections collections={this.props.categories}/>
+        <Collections collections={this.props.collections}/>
       </div>
     );
   }
 }
 
+
 const mapStateToProps = state => {
-  return {categories: state.categories}
+  return {collections: state.collections}
 }
 
 export default connect(mapStateToProps, {fetchCollections})(UserCollectionsContainer)
