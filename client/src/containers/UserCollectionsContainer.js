@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-// import Collections from '../components/collections/Collections'
+import Collections from '../components/collections/Collections'
 import { fetchCollections } from '../actions/fetchCollections'
 
 class UserCollectionsContainer extends Component {
@@ -14,6 +14,7 @@ class UserCollectionsContainer extends Component {
     return (
       <div>
         <h2>USER COLLECTIONS</h2>
+        <Collections collections={this.props.categories}/>
       </div>
     );
   }
