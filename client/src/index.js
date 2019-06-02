@@ -1,44 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import thunk from 'redux-thunk'
-import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import {
-  Route,
-  NavLink,
-  HashRouter as Router
-} from 'react-router-dom'
-import HomeContainer from './containers/HomeContainer'
-import AccountContainer from './containers/AccountContainer'
-import UserCollectionsContainer from './containers/UserCollectionsContainer'
-import rootReducer from './reducers/rootReducer'
+import { Route, Switch } from 'react-router' // react-router v4/v5
+import { ConnectedRouter } from 'connected-react-router'
+import configureStore, { history } from './configureStore'
 
-const store = createStore(rootReducer, applyMiddleware(thunk))
+const store = configureStore()
 
-const App = () => {
+ReactDOM.render(
+  <Provider store={store}>
 
-  return (
-   <Provider store={store}>
-     <Router>
-       <div>
-         <h1>Collekt!</h1>
-         <ul className="header">
-           <li><NavLink exact to="/">Home</NavLink></li>
-           <li><NavLink to="/account">Account</NavLink></li>
-           <li><NavLink to="/user_collections">User Collections</NavLink></li>
-         </ul>
+        <Route exact path='/' render={() => <div>I'm a Route</div>}/>
 
-          <div className="content">
-            <Route exact path="/" component={HomeContainer}/>
-            <Route path="/account" component={AccountContainer}/>
-            <Route path="/user_collections" component={UserCollectionsContainer}/>
-          </div>
-       </div>
-     </Router>
-   </Provider>
-  )
-}
-
-ReactDOM.render(<App />, document.getElementById('root'))
-
-// <Route path="/user_collections" component={UserCollectionsContainer}/>
+  </Provider>,
+  document.getElementById('react-root')
+)
