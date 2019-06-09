@@ -1,4 +1,4 @@
-export default function collections(state = {
+export default function collectionsReducer(state = {
   collections: [] },
   action) {
 

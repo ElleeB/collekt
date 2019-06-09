@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     resources :collections do
       resources :items
     end
+    get '/current_user' => 'users#show'
   end
+
 end

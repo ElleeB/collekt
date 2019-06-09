@@ -3,6 +3,11 @@ module Api
     def index
     end
 
+    def show
+      @user = User.find(1)
+      render json: @user
+    end
+
     private
 
     def user_params

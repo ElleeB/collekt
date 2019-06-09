@@ -3,8 +3,9 @@ import Collection from './Collection'
 
 class Collections extends Component {
   render() {
-    const { collections } = this.props
 
+    const { collections } = this.props.collections
+    
     const collectionList = collections.map(
       collection => {
         return (
