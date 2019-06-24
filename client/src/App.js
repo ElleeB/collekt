@@ -13,11 +13,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <h1>Collekt!</h1>
+          <h1>Collekt!</h1> //current_user!
+            <h2>Hello, current user</h2>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/account">Account</NavLink></li>
-            <li><NavLink to="/user_collections">User Collections</NavLink></li>
+            <li><NavLink to="/user_collections">My Collections</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path='/' component={HomeContainer} />

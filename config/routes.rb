@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :categories, only: [:index, :show]
     resources :collections
     resources :items
-    resources :sessions, only: [:new, :create]
+    # resources :sessions, only: [:new, :create, :destory]
     resources :images
 
     resources :users do
@@ -14,7 +14,10 @@ Rails.application.routes.draw do
     resources :collections do
       resources :items
     end
-    get '/current_user' => 'users#show'
+    # get '/current_user' => 'users#show'
+    get '/login', to: 'sessions#new'
+    post '/login', to: 'sessions#create'
+    delete '/logout', to: 'sessions#destroy'
   end
 
 end

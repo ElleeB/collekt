@@ -12,7 +12,7 @@ class UserCollectionsContainer extends Component {
   render() {
     return (
       <div>
-        <h2>USER COLLECTIONS</h2>
+        <h2>MY COLLECTIONS</h2>
         <Collections collections={this.props.collections}/>
       </div>
     );
