@@ -1,3 +1,7 @@
+Update here: https://github.com/ElleeB/collekt-app
+
+* Restructure original WIP app to upgrade to rails 6 + react
+
 # README
 
 This README would normally document whatever steps are necessary to get the
