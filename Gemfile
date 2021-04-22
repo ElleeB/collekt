@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
 gem 'active_model_serializers'
-gem 'oauth', '~> 0.5.1'
+gem 'oauth', '~> 0.5.5'
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
